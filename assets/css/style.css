@@ -1,0 +1,332 @@
+/* Importando o Reset CSS */
+@import url(../css/reset.css);
+
+/* Menu onde contém as 3 divs referente a logo do Youtube, barra de pesquisa, notificações e imagem pessoal  */
+.menu{
+    background: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 56px;
+    
+    padding: 0px 24px;
+}
+
+/* Menu inicial onde contém a logo do YouTube e as 3 linhas horizontais */
+.menu #start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 146px;
+    height: 24px;
+}
+
+/* Para dar o espaçamento de 32px entre as imagens */
+.menu #start img:first-child {
+    margin-right: 32px;
+}
+
+/* Menu do meio onde está a barra de pesquisa */
+.menu #center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configurações da barra de pesquisa */
+.menu #center #search-bar{
+    width: 348px;
+    height: 40px;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #CCCCCC
+}
+
+/* Configurações do botão de pesquisa */
+.menu #center button{
+    background-image: url(../img/magnifier-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    width: 57px;
+    height: 40px;
+
+    border: 1px solid #CCCCCC
+}
+
+/* Configuração do tamanho da imagem do botão de pesquisa */
+.menu #center button img{
+    width: 24px;
+    height: 24px;
+}
+
+/* Menu final onde contem as notificações e a imagem pessoal */
+.menu #end{
+    display: flex;
+    align-items: center;
+
+    width: 130px;
+    height: 34px;
+}
+
+/* Configuração do tamanho da imagem pessoal */
+.menu #end img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 24px; 
+}
+
+/* Fazendo com que o conteúdo da main fique lado a lado */
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Definido o padding e background da section */
+main section{
+    padding: 28px 0 0 28px;
+    
+    background: #F9F9F9;    
+}
+
+/* Definido o padding e background dos conteúdos relacionados */
+main aside{
+    background: #F9F9F9;
+
+    padding: 28px 0 0 28px;
+
+    width: 100%;
+}
+
+/* Configuração do tamanho do vídeo principal */
+div.video iframe{
+    width: 902px;
+    height: 537px;
+}
+
+/* Confiigurando o título do vídeo princial */
+div.title{
+    margin: 16px 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+/* Barra com as informações com a logo do canal, botão de seguir, like, deslike, compartilhar e download na horizontal */
+div.video-actions{
+    display: flex;
+    flex-direction: row;
+   
+    width: 902px;
+    height: 42px;
+    gap: 42px;
+}
+
+/* Div que contém a logo, nome e número de inscritos do canal */
+div.video-actions div.channel-infos{
+    display: flex;
+    flex-direction: row;
+
+    width: 160px;
+    height: 42px;
+    gap: 12px;
+}
+
+/* Configuração to tamanho da logo do canal */
+div.video-actions div.channel-infos img{
+    width: 42px;
+    height: 42px;
+}
+
+/* Configuração na forma de exibição da div que contém o nome do canal e quantidade de inscritos */
+div.video-actions div.channel-infos ul{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* Configuração do tamanho da fonte e altura da linha do nome do canal e quantidade de inscritos */
+div.video-actions div.channel-infos ul li#name,
+div.video-actions div.channel-infos ul li#subscribers
+{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Definindo a cor e peso do nome do canal */
+div.video-actions div.channel-infos ul li#name{
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Definindo a cor e peso da quantidade de inscritos do canal */
+div.video-actions div.channel-infos ul li#subscribers{
+    color: #515151;
+    font-weight: 400;
+}
+
+/* Configuração do botão INSCREVA-SE */
+div.video-actions button{
+    width: 159px;
+    height: 40px;
+    border-radius: 2px;
+
+    align-self: center;
+    
+    background: #CC0000;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Definindo o tamanho padrão para os icones de like, deslike, compartilhar e download */
+div.video-actions img.icon{
+    width: 24px;
+    height: 24px;
+}
+
+/* Configuração para deixar cada div alinhada e no centro */
+div.video-actions div.like,
+div.video-actions div.dislike,
+div.video-actions div.share,
+div.video-actions div.download{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+/* Configuração do tamanho da div like */
+div.video-actions div.like{
+    width: 63px;
+    height: 24px;
+}
+
+/* Configuração do tamanho da div deslike */
+div.video-actions div.dislike{   
+    width: 100px;
+    height: 24px;
+}
+
+/* Configuração do tamanho da div share (compartilhar) */
+div.video-actions div.share{
+    width: 115px;
+    height: 24px;
+}
+
+/* Configuração do tamanho da div download */
+div.video-actions div.download{
+    width: 95px;
+    height: 24px;
+}
+
+/* Configuração da li, para deixá-la centralizada e tipografia */
+div.video-actions div.like li,
+div.video-actions div.dislike li,
+div.video-actions div.share li,
+div.video-actions div.download li{
+    align-self: center;
+    
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+/* Contém informações do número de visualizações do vídeo e quando foi postado/transmitido */
+div.view{
+    margin: 16px 0;
+    
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+
+    width: 391px;
+    height: 16px;
+}
+
+/* Configuração da descrição do vídeo */
+div.description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    width: 510px;
+    height: 64px;
+}
+
+/* Configuração do tamanho da imagem do conteúdo relacionado */
+aside img.thumb{
+    width: 160px;
+    height: 90px;
+}
+
+/* Configuração para deixar alinhado a imagem do conteúdo relacionado com as informações do vídeo */
+div.aside-content{
+    display: flex;
+    flex-direction: row;
+
+    width: 372px;
+    height: 90px;
+
+    margin: 0 0 16px 0;
+}
+
+/* Configuração da ul em que está as informações ppor escrito do vídeo relacionado
+neste caso vai deixar em coluna e alinhado na altura */
+div.aside-content div.aside-infos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 196px;
+    height: 90px;
+    left: 176px;
+
+    margin-left: 16px;
+}
+
+/* Configurando fonte e tamanho do título da div do vídeo relacionado */
+div.aside-content div.aside-infos ul li.title{
+    width: 196px;
+    height: 32px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+}
+
+/* Configurando fonte e tamanho do nome do canal da div do vídeo relacionado */
+div.aside-content div.aside-infos ul li.info-01{
+    margin: 8px 0 7px 0;
+    
+    width: 196px;
+    height: 14px;
+    top: 40px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #515151;
+}
+
+/* Configurando fonte e tamanho do número de visualizações e quando foi postado da div do vídeo relacionado */
+div.aside-content div.aside-infos ul li.info-02{
+    width: 196px;
+    height: 28px;
+    top: 61px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #515151;
+}
